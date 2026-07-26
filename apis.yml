@@ -1,8 +1,23 @@
 aid: farfetch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/farfetch.png
 name: Farfetch
-description: 'Farfetch is a company surfaced as a portfolio company of idg-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Farfetch is a global luxury fashion technology platform and online marketplace connecting
+  consumers with boutiques, brands, and department stores across more than 190 countries, offering designer
+  womenswear, menswear, kidswear, shoes, bags, and accessories. Beyond its consumer marketplace, Farfetch
+  historically operated a B2B arm, Farfetch Platform Solutions (FPS), providing e-commerce, fulfilment,
+  and logistics technology to luxury retailers; the group was acquired by Coupang in early 2024. No public
+  developer portal or API documentation is currently reachable for the marketplace or the platform arm.'
 url: https://raw.githubusercontent.com/api-evangelist/farfetch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Ecommerce
+- Fashion
+- Luxury
+- Marketplace
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/farfetch-domain-security.yml
 - type: Website
   url: https://farfetch.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
